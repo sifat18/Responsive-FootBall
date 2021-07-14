@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 /* header styles */
 
@@ -164,7 +163,9 @@ font-weight: 900;
     font-weight: 400;
     color: gray;
 }
-
+#video{
+    margin-left: 30%;
+}
 
 
 
@@ -199,12 +200,15 @@ margin-bottom: 40px;
     font-size: 1rem;
     margin-left: -20px;
 }
-#video{
-    margin-left: 30%;
-}
+
 
 /* for 360px */
 @media only screen and (max-width: 360px) {
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
     .header{
         /* width: 1440px; */
         height: 695px;
@@ -263,5 +267,83 @@ margin-bottom: 40px;
         animation: roll 1s ease-in-out 0s alternate infinite;
         
     }
+
+    .container{
+        margin:47px ;
+        
+    }
+    .players{
+        display: grid;
+        margin-left: -78%;
+        grid-template-columns: repeat(1,0.3fr);
+        grid-row-gap: 24px;
+
+        /* grid-column-gap: px; */
+    }
+    
+    .copa-higlight{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 60px;
+    }
+    .bottom-title{
+        margin-top: 10px;
+        font-size: 1rem;
+        line-height: 15px;
+        margin-left: 5px;
+        
+    }
+    .bottom-title>p{
+        /* margin-top: -120px; */
+        font-size: 1rem;
+        color: gray;
+        line-height: 25px;
+        margin-right:1px;
+        
+    }
+    
+    .bottom-image img{
+        margin-top: 35px;
+        padding-left: -77x;
+        margin-left: -27px;
+        width: 328px;
+        height: 248px;
+
+            }
+            .statistics{
+                display: flex;
+                flex-direction: column;
+                margin: 15% 15%;
+                height: 380px;
+                width: 80%;
+            }
+            .stat{
+            font-weight: 900;
+                padding-left: 5%;
+            }
+            #video{
+                display: none;
+            }
+            /* footer{
+            justify-content: center;
+            margin-bottom: 40px;
+            } */
+            .footer-img{
+                margin-top: 40px;
+                margin-left: 20px;
+                background-image: url('images/Logo.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 250px;
+                height: 160px;
+            }
+            .icons{
+                /* margin-top: -80px; */
+                margin-left: 30px;
+                padding-left:20px;
+            
+            }
 
 } 
